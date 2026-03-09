@@ -39,11 +39,12 @@ else:
 gross_pay = reg_hour_pay + overtime_pay
 
 # Display results
-print("-" * 40)
+print("----------------------------------------")
 print(f"Employee name:    {emp_name}")
 print()
 # Headers
 print(f"{'Hours Worked':<15}{'Pay Rate':<12}{'OverTime':<12}{'OverTime Pay':<15}{'RegHour Pay':<15}{'Gross Pay'}")
-print("-" * 85)
+print("-------------------------------------------------------------------------------------")
 # Data Row
+
 print(f"{hours_worked:<15.1f}{pay_rate:<12.1f}{overtime_hours:<12.1f}{overtime_pay:<15.2f}${reg_hour_pay:<14.2f}${gross_pay:<15.2f}")
