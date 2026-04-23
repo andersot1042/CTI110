@@ -14,7 +14,7 @@ def ask_question(question, options, correct_answer):
         print("Incorrect!\n")
         return 0
 
-
+# Most questions were revised to make it more challenging
 def main():
     print("Welcome to the Lord of the Rings Quiz!\n")
 
@@ -79,7 +79,7 @@ def main():
     print("Quiz Complete!")
     print(f"You got {score} out of {len(questions)} correct.\n")
 
-    # Character classification
+    # Character classification based on number of questions answered correctly
     if score <= 3:
         character = "Gollum – Lost and confused, but still hanging in there."
     elif score <= 5:
@@ -95,5 +95,6 @@ def main():
     print(character)
     print(f"(Score: {score}/{len(questions)})")
 
+# Start trigger added here
 if __name__ == "__main__":
     main()
